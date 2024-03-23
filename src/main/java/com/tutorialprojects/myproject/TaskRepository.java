@@ -1,2 +1,6 @@
-package com.tutorialprojects.myproject;public interface TaskRepository {
+package com.tutorialprojects.myproject;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface TaskRepository extends JpaRepository<Task, Long> {
 }
